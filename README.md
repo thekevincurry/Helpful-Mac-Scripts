@@ -1,3 +1,7 @@
+#Helpful Shell Scripts
+
+This is a collection of shell scripts I have created for accomplishing simple, but time consuming tasks. 
+
 ## ZIP File Creator Script (zip_script.sh)
 
 This script is designed to help you create multiple ZIP files from a given folder, each limited to a specific size. It's particularly useful for managing large folders that need to be compressed into smaller, more manageable archived files.
