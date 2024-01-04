@@ -14,3 +14,27 @@ Before running this script, ensure you have the following:
 2. Make sure the script (`zip_creator.sh`) is executable. You can use the following command:
    ```bash
    chmod +x zip_creator.sh
+
+# Photo Timestamp Update Script (photo_time.sh)
+
+This bash script is designed to update the file modification/access times and EXIF data of photos based on the directory names they are contained in. It's particularly useful for organizing and managing photo collections, especially when the photos need to be sorted or processed based on the dates.
+
+## How It Works
+
+The script iterates through all subdirectories in the directory it's run from. It assumes that each subdirectory's name is a date in the format `YYYY-MM-DD`. The script then performs two main functions:
+
+1. **Updates File Timestamps:** Modifies the file modification and access times of all files (not just photos) in each directory to match the date derived from the directory name.
+2. **Updates EXIF Data:** Specifically for JPEG files, the script updates the EXIF date to match the directory name.
+
+## Prerequisites
+
+- Bash shell (Unix/Linux/Mac)
+- `jhead` tool installed for handling JPEG EXIF data
+
+## Usage
+
+1. Place the script in the parent directory containing your dated folders.
+2. Ensure that each folder's name follows the `YYYY-MM-DD` format.
+3. Run the script:
+   ```bash
+   ./phote_time.sh
